@@ -1,3 +1,14 @@
+/*
+
+ #51687d
+ black
+ white
+ #d59bff
+
+
+
+*/
+
 *{
     padding: 0;
     margin: 0;
@@ -16,15 +27,17 @@ align-items: center;
 justify-content: center;
 
 
+
 }
 .content{
 
-    color: #fff ;
+    color: #d59bff ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .bigTitle{
@@ -36,18 +49,26 @@ line-height: 3;
 
 
 }
-.btn{
+/* BUTTONS */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btnAni{
     background-color: rgb(255, 255, 255);
     border: solid 2px blue;
     padding: 10px 40px; 
     text-transform: uppercase;
     font-weight: 600;
     color: rgb(16, 16, 43);
-    border-radius: 3px;
+    border-radius: 5px;
     transition: 0.4s;
 }
 
-.btn:hover{
+.btnAni:hover , .btnColo:hover{
     background-color: rgb(18, 18, 54);
     border: solid 2px rgb(255, 255, 255);
   
@@ -56,6 +77,18 @@ line-height: 3;
     color: rgb(255, 255, 255);
     border-radius: 3px;
 }
+.btnColo{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: white;
+    color: rgb(16, 16, 43);
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+
+/*  ANIMATION */
+
 .animated-text {
   
     animation: moveText 2s infinite;
@@ -72,3 +105,84 @@ line-height: 3;
       transform: translateX(0); 
     }
   }
+
+
+/* COLORS */
+
+.colors{
+    position: absolute;
+    z-index: 5;
+
+    background-color: #dedede;
+
+
+    width: 150px;
+    height: 150px;
+    border-radius: 5px ;
+    border: 2px rgb(255, 255, 255) solid;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+
+
+}
+
+
+.colors .color{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: center;
+border-radius: 5px;
+
+
+}
+.colors .color:active{
+    border: 2px solid rgb(120, 140, 227);
+}
+
+.Cblue{
+
+ background-color:  #51687d;
+}
+.Cwhite{
+    background-color: white;
+    
+}
+.Cpink{
+    background-color:#d59bff ;
+}
+.Cblack{
+    background-color: black;
+}
+
+
+
+.flow{
+        backdrop-filter: blur(10px);
+        will-change: backdrop-filter;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+}
+.hidden{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    background-color: rgb(130, 232, 237);
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    top: 10px;
+    border: 2px solid rgb(149, 208, 245);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.close:hover{
+    background-color: rgb(149, 208, 245);
+    padding: 5px;
+}
+
