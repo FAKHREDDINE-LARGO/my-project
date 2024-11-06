@@ -50,8 +50,8 @@ line-height: 3;
 .btn:hover{
     background-color: rgb(18, 18, 54);
     border: solid 2px rgb(255, 255, 255);
-    padding: 10px 40px; 
-    text-transform: uppercase;
+  
+
     font-weight: 600;
     color: rgb(255, 255, 255);
     border-radius: 3px;
