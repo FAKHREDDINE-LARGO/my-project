@@ -1,4 +1,6 @@
 const bigTitle = document.querySelector('.bigTitle')
+const closs = document.querySelector('.close')
+closs.classList.add('hidden')
 function anima(){
 
 bigTitle.classList.toggle('animated-text')
