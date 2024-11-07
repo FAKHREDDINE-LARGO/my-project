@@ -59,6 +59,10 @@ function colo4(){
 
 // fonts 
 
+const fontOne  = document.querySelector('.fontOne')
+const fontTwo  = document.querySelector('.fontTwo')
+const fontThree  = document.querySelector('.fontThree')
+const fontFoure  = document.querySelector('.fontFoure')
 
 const fonts = document.querySelector('.fn')
 fonts.classList.add('hidden')
@@ -68,14 +72,24 @@ function btnFont(){
     fonts.classList.remove('hidden')
     flow.classList.remove('hidden')
     closs.classList.remove('hidden')
+
 }
 
 function one(){
 
     bigTitle.classList.add('fontOne')
+
     flow.classList.add('hidden')
     fonts.classList.add('hidden')
     closs.classList.add('hidden')
+
+    // FONTS 
+bigTitle.classList.remove('fontTwo')
+bigTitle.classList.remove('fontThree')
+bigTitle.classList.remove('fontFoure')
+
+   
+
 
 }
 function two(){
@@ -84,6 +98,11 @@ function two(){
     flow.classList.add('hidden')
     fonts.classList.add('hidden')
     closs.classList.add('hidden')
+
+        // FONTS 
+bigTitle.classList.remove('fontOne')
+bigTitle.classList.remove('fontThree')
+bigTitle.classList.remove('fontFoure')
 }
 function three(){
 
@@ -91,11 +110,22 @@ function three(){
     flow.classList.add('hidden')
     fonts.classList.add('hidden')
     closs.classList.add('hidden')
+
+        // FONTS 
+bigTitle.classList.remove('fontTwo')
+bigTitle.classList.remove('fontOne')
+bigTitle.classList.remove('fontFoure')
 }
 function foure(){
     bigTitle.classList.add('fontFoure')
     flow.classList.add('hidden')
     fonts.classList.add('hidden')
     closs.classList.add('hidden')
+
+
+        // FONTS 
+bigTitle.classList.remove('fontTwo')
+bigTitle.classList.remove('fontThree')
+bigTitle.classList.remove('fontOne')
     
 }
