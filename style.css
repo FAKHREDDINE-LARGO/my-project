@@ -42,7 +42,7 @@ justify-content: center;
 
 .bigTitle{
 text-align: center;
-font-size: 60px;
+font-size: 40px;
 text-transform: uppercase;
 letter-spacing: 27px;
 line-height: 3;
@@ -68,7 +68,7 @@ line-height: 3;
     transition: 0.4s;
 }
 
-.btnAni:hover , .btnColo:hover{
+.btnAni:hover , .btnColo:hover , .btnFont:hover{
     background-color: rgb(18, 18, 54);
     border: solid 2px rgb(255, 255, 255);
   
@@ -85,6 +85,17 @@ line-height: 3;
     color: rgb(16, 16, 43);
     border-radius: 5px;
     border: 2px solid blue;
+}
+
+.btnFont{
+    background-color: rgb(255, 255, 255);
+    border: solid 2px blue;
+    padding: 10px 40px; 
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(16, 16, 43);
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
 /*  ANIMATION */
@@ -170,19 +181,76 @@ border-radius: 5px;
 
 .close{
     position: absolute;
-    background-color: rgb(130, 232, 237);
-    width: 25px;
-    height: 25px;
+    
+    width: 15px;
+    height: 15px;
     right: 10px;
     top: 10px;
-    border: 2px solid rgb(149, 208, 245);
+    border: 1.4px solid rgb(255, 255, 255);
     border-radius: 50%;
     background-color: transparent;
     transition: 0.4s;
+text-align: center;
+
+
 }
+
 
 .close:hover{
-    background-color: rgb(149, 208, 245);
-    padding: 5px;
+    border: 1.4px solid rgb(255, 255, 255);
+    
+   
+    
+}
+.close svg{
+    fill: transparent;
+    transition: 0.4s;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    
+}
+.close svg:hover{
+    fill: white;
+}
+/* font family */
+.fn{
+    position: absolute;
+    z-index: 5;
+}
+.fonts{
+    background-color: white;
+    width: 400px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+padding: 10px;
+border-radius: 8px;
+
+
+}
+.fonts .font{
+    background-color: rgb(239, 247, 251);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 1px 2px rgba(173, 205, 249, 0.292);
+ color: rgba(9, 9, 42, 0.732);
+ cursor: pointer;
 }
 
+.fontOne{
+    font-family: "Edu AU VIC WA NT Pre", serif;   
+}
+.fontTwo{
+    font-family: "Ubuntu", sans-serif;
+
+}
+.fontThree{
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 200;
+}
+.fontFoure{
+    font-family: "Josefin Sans", sans-serif;
+}
