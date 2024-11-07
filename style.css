@@ -254,3 +254,41 @@ border-radius: 8px;
 .fontFoure{
     font-family: "Josefin Sans", sans-serif;
 }
+
+
+@media screen and (max-width : 75em) {
+ 
+    .bigTitle{
+font-size: 30px;
+letter-spacing: 20px;
+    }
+ 
+   
+}
+@media screen and (max-width : 59em) {
+ 
+    .bigTitle{
+font-size: 20px;
+letter-spacing: 15px;
+    }
+ 
+   
+}
+@media screen and (max-width : 44em) {
+ 
+    .bigTitle{
+font-size: 20px;
+letter-spacing: 15px;
+    }
+ 
+   
+}
+@media screen and (max-width : 34em) {
+ 
+    .bigTitle{
+font-size: 15px;
+letter-spacing: 5px;
+    }
+ 
+   
+}
